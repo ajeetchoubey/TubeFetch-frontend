@@ -15,7 +15,7 @@ function App() {
     try {
       setDownloading(true);
       const response = await axios.get(
-        `http://localhost:3000/download?url=${encodeURIComponent(
+        `https://tubefetch-backend-production.up.railway.app/download?url=${encodeURIComponent(
           videoURL
         )}&format=${format}`,
         {
